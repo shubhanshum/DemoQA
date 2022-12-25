@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [EndToEndFlowSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="DemoQATestOnChrome(failed)">
+    <parameter name="browserName" value="Edge"/>
+    <parameter name="url" value="https://demoqa.com/"/>
+    <classes>
+      <class name="com.demoqa.tests.SubmitUserFormTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+          <include name="submitUserFormTest"/>
+        </methods>
+      </class> <!-- com.demoqa.tests.SubmitUserFormTest -->
+      <class name="com.demoqa.tests.UserDataTest">
+        <methods>
+          <include name="userDataTest"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.demoqa.tests.UserDataTest -->
+    </classes>
+  </test> <!-- DemoQATestOnChrome(failed) -->
+</suite> <!-- Failed suite [EndToEndFlowSuite] -->

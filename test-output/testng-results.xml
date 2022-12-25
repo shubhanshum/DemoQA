@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-25T15:19:05 CET" name="EndToEndFlowSuite" finished-at="2022-12-25T15:19:57 CET" duration-ms="51931">
+    <groups>
+    </groups>
+    <test started-at="2022-12-25T15:19:05 CET" name="DemoQATestOnChrome" finished-at="2022-12-25T15:19:39 CET" duration-ms="34713">
+      <class name="com.demoqa.tests.SubmitUserFormTest">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.tests.SubmitUserFormTest@909217e]" started-at="2022-12-25T15:19:05 CET" name="Setup" finished-at="2022-12-25T15:19:23 CET" duration-ms="18836" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demoqa.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="submitUserFormTest()[pri:0, instance:com.demoqa.tests.SubmitUserFormTest@909217e]" started-at="2022-12-25T15:19:24 CET" name="submitUserFormTest" finished-at="2022-12-25T15:19:29 CET" duration-ms="5057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitUserFormTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.tests.SubmitUserFormTest@909217e]" started-at="2022-12-25T15:19:29 CET" name="tearDown" finished-at="2022-12-25T15:19:29 CET" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoqa.tests.SubmitUserFormTest -->
+      <class name="com.demoqa.tests.UserDataTest">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.tests.UserDataTest@cc43f62]" started-at="2022-12-25T15:19:29 CET" name="Setup" finished-at="2022-12-25T15:19:37 CET" duration-ms="8024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demoqa.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="userDataTest()[pri:0, instance:com.demoqa.tests.UserDataTest@cc43f62]" started-at="2022-12-25T15:19:37 CET" name="userDataTest" finished-at="2022-12-25T15:19:39 CET" duration-ms="1956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userDataTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.tests.UserDataTest@cc43f62]" started-at="2022-12-25T15:19:39 CET" name="tearDown" finished-at="2022-12-25T15:19:39 CET" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoqa.tests.UserDataTest -->
+    </test> <!-- DemoQATestOnChrome -->
+    <test started-at="2022-12-25T15:19:05 CET" name="DemoQATestOnFirefox" finished-at="2022-12-25T15:19:57 CET" duration-ms="51931">
+      <class name="com.demoqa.tests.SubmitUserFormTest">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.tests.SubmitUserFormTest@7ae0a9ec]" started-at="2022-12-25T15:19:05 CET" name="Setup" finished-at="2022-12-25T15:19:27 CET" duration-ms="22063" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demoqa.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="submitUserFormTest()[pri:0, instance:com.demoqa.tests.SubmitUserFormTest@7ae0a9ec]" started-at="2022-12-25T15:19:27 CET" name="submitUserFormTest" finished-at="2022-12-25T15:19:31 CET" duration-ms="4012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitUserFormTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.tests.SubmitUserFormTest@7ae0a9ec]" started-at="2022-12-25T15:19:31 CET" name="tearDown" finished-at="2022-12-25T15:19:33 CET" duration-ms="2027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoqa.tests.SubmitUserFormTest -->
+      <class name="com.demoqa.tests.UserDataTest">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.tests.UserDataTest@35841320]" started-at="2022-12-25T15:19:33 CET" name="Setup" finished-at="2022-12-25T15:19:52 CET" duration-ms="19214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demoqa.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="userDataTest()[pri:0, instance:com.demoqa.tests.UserDataTest@35841320]" started-at="2022-12-25T15:19:52 CET" name="userDataTest" finished-at="2022-12-25T15:19:56 CET" duration-ms="3764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userDataTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.tests.UserDataTest@35841320]" started-at="2022-12-25T15:19:56 CET" name="tearDown" finished-at="2022-12-25T15:19:57 CET" duration-ms="815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoqa.tests.UserDataTest -->
+    </test> <!-- DemoQATestOnFirefox -->
+  </suite> <!-- EndToEndFlowSuite -->
+</testng-results>
