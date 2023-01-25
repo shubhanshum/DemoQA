@@ -9,6 +9,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -30,7 +31,7 @@ public class RunnerTest {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			caps=new DesiredCapabilities();
 			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("--headed");
+			chromeOptions.addArguments("-headless");
 			chromeOptions.addArguments("--ignore-ssl-errors=yes");
 			chromeOptions.addArguments("--ignore-certificate-errors");
 			caps.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
@@ -48,7 +49,7 @@ public class RunnerTest {
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			caps=new DesiredCapabilities();
 			FirefoxOptions firefoxOptions=new FirefoxOptions();
-			firefoxOptions.addArguments("-headless");
+			firefoxOptions.addArguments("--headless");
 			firefoxOptions.addArguments("--ignore-ssl-errors=yes");
 			firefoxOptions.addArguments("--ignore-certificate-errors");
 			caps.setCapability(FirefoxOptions.FIREFOX_OPTIONS, firefoxOptions);
@@ -66,7 +67,7 @@ public class RunnerTest {
 		else if (browserName.equalsIgnoreCase("edge")) {
 			caps=new DesiredCapabilities();
 			EdgeOptions edgeOptions=new EdgeOptions();
-			edgeOptions.addArguments("--headless");
+			edgeOptions.addArguments("-headless");
 			edgeOptions.addArguments("--ignore-ssl-errors=yes");
 			edgeOptions.addArguments("--ignore-certificate-errors");
 			caps.setCapability(EdgeOptions.CAPABILITY, edgeOptions);
@@ -85,7 +86,8 @@ public class RunnerTest {
 			System.out.println("Browser not specified");
 		}
         
-        getDriver().get(url);
+        getDriver().get(System.getProperty("ENVT_URL"));
+
         //getDriver().manage().window().maximize();
         getDriver().manage().window().setSize(new Dimension(2024, 880));
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));

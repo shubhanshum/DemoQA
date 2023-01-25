@@ -1,5 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="EndToEndFlowSuite" verbose="1" parallel="tests">
+<suite name="EndToEndFlowSuite" verbose="1" parallel="classes">
+	
 	<test name="DemoQATestOnChrome">
 		<parameter name="browserName" value="Chrome" />
 		<parameter name="url"
@@ -9,8 +10,8 @@
 			<class name="com.demoqa.tests.UserDataTest" />
 		</classes>
 	</test>
-	<test name="DemoQATestOnFirefox">
-		<parameter name="browserName" value="Firefox" />
+	<test name="DemoQATestOnEdge">
+		<parameter name="browserName" value="Edge" />
 		<parameter name="url"
 			value="https://demoqa.com/" />
 		<classes>
